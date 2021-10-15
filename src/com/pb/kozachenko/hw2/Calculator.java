@@ -30,7 +30,7 @@ public class Calculator {
                 System.out.println("Результат операции: " + operand1 + sign + operand2 + "=" + result);
                 break;
             default:
-                System.out.println("Проверьте корректоность ввода данных");
+                System.out.println("Проверьте корректоность ввода данных!");
         }
     }
 }

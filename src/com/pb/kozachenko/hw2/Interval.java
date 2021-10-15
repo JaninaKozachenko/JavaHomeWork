@@ -15,6 +15,6 @@ public class Interval {
             System.out.println("Введенное число попадает в диапазон [36-50]");
         } else if (numb >= 51 && numb <= 100) {
             System.out.println("Введенное число попадает в диапазон [51-100]");
-        } else System.out.println("Введенное число не попадает ни в один из диапазонов");
+        } else System.out.println("Введенное число не попадает ни в один из диапазонов(");
     }
 }
