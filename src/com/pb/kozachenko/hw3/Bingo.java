@@ -20,7 +20,7 @@ public class Bingo {
             } else if (userNumber < programNumber && userNumber <= 100 && userNumber >= 0) {
                 System.out.println("Вы не угадали! Введенное число меньше загадонного. Попробуйте еще раз.");
             } else if (userNumber == programNumber && userNumber <= 100 && userNumber >= 0) {
-                System.out.println("Вы угадали! Это число " + programNumber + ".");
+                System.out.println("Вы угадали! И это число " + programNumber + ".");
             } else if (userNumber == 1000) {
                 break;
             } else System.out.println("Введите корретно целое число от 0 до 100");

@@ -28,7 +28,7 @@ public class Array {
             }
         }
         System.out.println("Количество положительных чисел массива: " + count);
-        System.out.println("Сортировка от меньшего к большему:");
+        System.out.println("Сортировка чисел массива от меньшего к большему:");
         int sortMas;
         for (int i = array.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
