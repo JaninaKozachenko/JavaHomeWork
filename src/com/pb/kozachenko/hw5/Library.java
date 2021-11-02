@@ -29,8 +29,8 @@ public class Library {
         readerOne.takeBook(bookOne.getTitle() + ",", bookThree.getTitle());
         readerThree.takeBook(bookTwo.getTitle() + ",", bookThree.getTitle());
 
-        readerOne.takeBook(bookOne,bookThree);
-        readerThree.takeBook(bookTwo,bookThree);
+        readerOne.takeBook(bookOne, bookThree);
+        readerThree.takeBook(bookTwo, bookThree);
 
         System.out.println("\nВозврат книг.");
         readerOne.returnBook(2);
@@ -39,7 +39,7 @@ public class Library {
         readerOne.returnBook(bookOne.getTitle() + ",", bookThree.getTitle());
         readerThree.returnBook(bookTwo.getTitle() + ",", bookThree.getTitle());
 
-        readerOne.returnBook(bookOne,bookThree);
+        readerOne.returnBook(bookOne, bookThree);
         readerThree.returnBook(bookTwo, bookThree);
     }
 }
