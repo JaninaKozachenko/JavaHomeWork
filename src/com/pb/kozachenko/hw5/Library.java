@@ -18,7 +18,7 @@ public class Library {
         System.out.println("Все книги библиотеки:\n" + bookOne.getInfoBook() + "\n" + bookTwo.getInfoBook() + "\n" + bookThree.getInfoBook());
 
         Reader readerOne = new Reader("Петров Д.Ю.", 8369, "юридический факультет", "14/06/2000", "0961393210");
-        Reader readerTwo = new Reader("Кил  Р.П.", 4563, "экономический факультет", "08/12/1999", "0508393542");
+        Reader readerTwo = new Reader("Кил Р.П.", 4563, "экономический факультет", "08/12/1999", "0508393542");
         Reader readerThree = new Reader("Визир К.Д.", 5210, "юридический факультет", "19/03/2001", "0678003020");
         System.out.println("\nВсе читатели библитеки:\n" + readerOne.getInfoReader() + "\n" + readerTwo.getInfoReader() + "\n" + readerThree.getInfoReader());
 
@@ -29,9 +29,8 @@ public class Library {
         readerOne.takeBook(bookOne.getTitle() + ",", bookThree.getTitle());
         readerThree.takeBook(bookTwo.getTitle() + ",", bookThree.getTitle());
 
-
-        readerOne.takeBook(bookOne.getTitle() + " (" + bookOne.getAuthor() + " " + bookOne.getYearOfPublishing() + "), ", bookThree.getTitle() + " (" + bookThree.getAuthor() + " " + bookThree.getYearOfPublishing() + ")");
-        readerThree.takeBook(bookTwo.getTitle() + " (" + bookTwo.getAuthor() + " " + bookTwo.getYearOfPublishing() + "), ", bookThree.getTitle() + " (" + bookThree.getAuthor() + " " + bookThree.getYearOfPublishing() + ")");
+        readerOne.takeBook(bookOne,bookThree);
+        readerThree.takeBook(bookTwo,bookThree);
 
         System.out.println("\nВозврат книг.");
         readerOne.returnBook(2);
@@ -40,7 +39,7 @@ public class Library {
         readerOne.returnBook(bookOne.getTitle() + ",", bookThree.getTitle());
         readerThree.returnBook(bookTwo.getTitle() + ",", bookThree.getTitle());
 
-        readerOne.returnBook(bookOne.getTitle() + " (" + bookOne.getAuthor() + " " + bookOne.getYearOfPublishing() + "), ", bookThree.getTitle() + " (" + bookThree.getAuthor() + " " + bookThree.getYearOfPublishing() + ")");
-        readerThree.returnBook(bookTwo.getTitle() + " (" + bookTwo.getAuthor() + " " + bookTwo.getYearOfPublishing() + "), ", bookThree.getTitle() + " (" + bookThree.getAuthor() + " " + bookThree.getYearOfPublishing() + ")");
+        readerOne.returnBook(bookOne,bookThree);
+        readerThree.returnBook(bookTwo, bookThree);
     }
 }

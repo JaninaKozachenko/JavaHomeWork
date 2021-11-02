@@ -54,7 +54,7 @@ public class Reader {
     public void takeBook(Book... infoOfBooks) {
         System.out.print("\n" + nameReader + " взял книги:");
         for (Book ibooks : infoOfBooks) {
-            System.out.println("\n" + ibooks.getInfoBook());
+            System.out.print(" " + ibooks.getTitle() + " (" + ibooks.getAuthor() + " " + ibooks.getYearOfPublishing() + "),");
         }
     }
 
@@ -72,7 +72,7 @@ public class Reader {
     public void returnBook(Book... infoOfBooks) {
         System.out.print("\n" + nameReader + " взял книги:");
         for (Book ibooks : infoOfBooks) {
-            System.out.println("\n" + ibooks.getInfoBook());
+            System.out.print(" " + ibooks.getTitle() + " (" + ibooks.getAuthor() + " " + ibooks.getYearOfPublishing() + "),");
         }
     }
 }
