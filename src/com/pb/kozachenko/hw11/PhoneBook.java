@@ -153,7 +153,7 @@ public class PhoneBook {
 
     public static void getContacts() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        List<People> peopleListNew = mapper.readValue(readFile(), new TypeReference<List<People>>() {
+        List <People> peopleListNew = mapper.readValue(readFile(), new TypeReference<List<People>>() {
         });
         System.out.println("Все Ваши контакты:");
         System.out.println(peopleListNew);
